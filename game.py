@@ -45,10 +45,10 @@ class game(object):
 
     def check_status(self, black):
         if self.check_win(black):
-            print("you won!")
+            print(WON_MESSAGE)
             self.is_end = True
         elif self.check_lose():
-            print("You lose! initial state was: " + self.to_str(self.initial_state))
+            print(LOSE_MESSAGE + self.to_str(self.initial_state))
             self.is_end = True
 
     def start(self):
